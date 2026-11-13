@@ -1,0 +1,210 @@
+ParkFinder - AI Development Conversation
+
+This is an adapted reconstruction of my conversations with ChatGPT about my final project. It summarizes our actual discussions but is not a word-for-word transcript.
+
+PART 1: ORIGINAL PROJECT IDEA
+
+Me: I originally wanted to make a Soccer Performance Tracker for my Python final project. I wanted people to be able to enter their goals, assists, and minutes played.
+
+ChatGPT: You could make a website where players record their performance after each game. The website could calculate their total goals, assists, and other statistics.
+
+Me: But I need at least 5 pages and 7 routes. How would that work?
+
+ChatGPT: You could have a Home page, Add Game page, History page, Statistics page, and Goals page. Other routes could handle saving and deleting games.
+
+Me: What about the two dataclasses?
+
+ChatGPT: You could create a Game dataclass to store statistics and a State dataclass to store a list of games and other information.
+
+Me: Okay, but I don't want the project to be too complicated.
+
+ChatGPT: You can keep everything simple by using lists, dataclasses, loops, and functions instead of advanced features like accounts or databases.
+
+
+PART 2: CHANGING THE PROJECT TO PARKFINDER
+
+Me: You know what, I think I want to change my project completely. What about making a website that recommends amusement parks based on distance, cost, and attractions?
+
+ChatGPT: That could work well for your final project. You could create a website called ParkFinder that recommends amusement parks based on the user's preferences.
+
+Me: What about having it ask for your location, like what state you live in, and then giving you options?
+
+ChatGPT: Yes. Users could select their state, enter their budget, choose how far they want to travel, and select their favorite type of attraction.
+
+Me: I also want it to show the top attractions at each park.
+
+ChatGPT: You could include a Park Details page that displays the park's name, estimated ticket price, distance, and popular attractions.
+
+Me: Would it be too complicated to use actual ticket prices and distances?
+
+ChatGPT: Getting live information would make the project more complicated. A simpler option is to use a built-in list of amusement parks with estimated ticket prices and coordinates.
+
+Me: Okay, let's do that. I also want people to be able to save their favorite parks.
+
+ChatGPT: We can add a favorites feature that lets users save and remove parks.
+
+
+PART 3: MEETING THE PROJECT REQUIREMENTS
+
+Me: I need to make sure this meets all the requirements for my final project.
+
+ChatGPT: Your project needs at least 7 routes, 5 pages, 4 State attributes, a second dataclass, 3 user inputs, 3 if statements, and a loop through dataclass objects.
+
+Me: Can ParkFinder meet all of those?
+
+ChatGPT: Yes. We can design the website around those requirements.
+
+Me: What pages would I have?
+
+ChatGPT: You could have Home, Find Parks, Results, Park Details, Favorites, and About.
+
+Me: What about the routes?
+
+ChatGPT: We can use index, search, update_search, results, park_details, add_favorite, favorites, remove_favorite, cheapest_park, and about.
+
+Me: So that's enough routes?
+
+ChatGPT: Yes. That gives you 10 routes, which is more than the minimum of 7.
+
+Me: What should the State dataclass have?
+
+ChatGPT: It can store location, budget, maximum distance, ride preference, and a list of favorite Park objects.
+
+Me: And the other dataclass?
+
+ChatGPT: The Park dataclass can store the name, state, estimated price, coordinates, ride type, attractions, and description.
+
+Me: How would I use loops and if statements?
+
+ChatGPT: You can use loops to search through parks and display favorites. If statements can check the budget, distance, and attraction preferences.
+
+
+PART 4: CREATING THE PYTHON WEBSITE
+
+Me: Okay, now let's actually make the website. I want the code to be simple and easy to understand.
+
+ChatGPT: We can organize the code into dataclasses, constants, helper functions, routes, and tests.
+
+Me: I want more than just a couple of amusement parks.
+
+ChatGPT: We can include parks from different states, such as Hersheypark, Cedar Point, Kings Dominion, Busch Gardens, and Universal Studios Florida.
+
+Me: How does the website calculate distance?
+
+ChatGPT: It can use coordinates and a distance formula to calculate approximate straight-line distances between the user's selected state and each amusement park.
+
+Me: So it won't be the exact driving distance?
+
+ChatGPT: Correct. It will be an approximation rather than the actual driving distance.
+
+Me: That's fine. I also want it to recommend the cheapest park.
+
+ChatGPT: We can add a route that checks the matching parks and finds the one with the lowest estimated ticket price.
+
+Me: Can you give me the complete code so I can put it into Thonny?
+
+ChatGPT: Yes. The code will include the Park and State dataclasses, the park information, search filters, results, park details, favorites, and tests.
+
+Me: I want the code to look normal and not have weird spacing or anything too complicated.
+
+ChatGPT: I'll keep the code organized with simple functions, readable names, and straightforward Python.
+
+
+PART 5: TESTING AND DEBUGGING
+
+Me: I tried running the code in Thonny and got an error.
+
+ChatGPT: What error message did you receive?
+
+Me: It says AssertionError. It also gives a warning that no entry path was provided.
+
+ChatGPT: The AssertionError means that one of the tests failed. The entry path warning is related to how Drafter is being started.
+
+Me: How do I fix it?
+
+ChatGPT: We should check the tests and make sure they match the functions in the program.
+
+Me: Can you simplify the tests and give me the updated code?
+
+ChatGPT: Yes. We can simplify the tests and keep the main features of ParkFinder.
+
+Me: I just want to make sure the website meets the requirements.
+
+ChatGPT: The code is designed to include the required routes, pages, dataclasses, inputs, conditions, and loops. We still need to verify that it runs and deploys correctly.
+
+
+PART 6: UPDATING THE WORKSHEETS
+
+Me: Since I changed my project from the soccer tracker to ParkFinder, do I need to change my worksheets?
+
+ChatGPT: Yes. Your brainstorming and design worksheets should match the final project you're submitting.
+
+Me: What about the first worksheet?
+
+ChatGPT: Update the project goal, inputs, processing, outputs, data abstraction, challenges, and brainstorming sections to describe ParkFinder.
+
+Me: Can you give me exactly what to write, word for word?
+
+ChatGPT: Yes. I'll provide simple answers for each question while keeping the original worksheet structure.
+
+Me: Is this other worksheet the design assignment?
+
+ChatGPT: Yes. It's Final Project: 1 - Design, and it also needs to be updated.
+
+Me: Give me everything I need to change in that one too.
+
+ChatGPT: We can update the project planning answers, State and Park dataclasses, routes, pages, inputs, if statements, and loop descriptions.
+
+Me: Now make me the diagram.
+
+ChatGPT: I'll create a website diagram showing the Home, Find Parks, Results, Park Details, Favorites, and About pages, along with the main routes and dataclasses.
+
+
+PART 7: PREPARING THE FINAL SUBMISSION
+
+Me: Okay, I updated both worksheets. What do I need to do to submit everything?
+
+ChatGPT: You need to put your Python code, both worksheets, and your AI conversation into a public GitHub repository. Then you need to deploy the website and submit the public website link on Canvas.
+
+Me: Is it supposed to be a Google Drive folder or something?
+
+ChatGPT: No. You can organize the files in a folder on your computer, but the final project needs to be uploaded to GitHub.
+
+Me: Should the worksheets be PDF or DOCX?
+
+ChatGPT: The worksheet instructions say to download them as Word documents, so DOCX is the appropriate format.
+
+Me: Okay, I have all the files in my folder. What do I do about the website?
+
+ChatGPT: You need to create a public GitHub repository, upload your files, and configure GitHub Pages to deploy the website.
+
+Me: I'm on GitHub. What do I do?
+
+ChatGPT: Create a public repository named ParkFinder, then upload your project files.
+
+Me: I uploaded the files. Am I good?
+
+ChatGPT: You're ready to commit the files, but your Python file is named ParkFinder.py. It should be renamed to main.py for the deployment setup.
+
+Me: What do I do after that?
+
+ChatGPT: The next step is to configure GitHub Actions, deploy the website, test the public link, and submit that link to Canvas.
+
+
+PART 8: AI CONVERSATION DOCUMENTATION
+
+Me: For the AI conversation, I have the planning conversations you gave me. Is that enough?
+
+ChatGPT: Those conversations cover the planning and design, but your assignment asks for the complete actual AI conversation, including development and debugging.
+
+Me: Can you combine everything into one conversation?
+
+ChatGPT: I can organize our discussions into a single document covering project planning, coding, debugging, worksheet updates, and submission.
+
+Me: Make sure there aren't any weird symbols or formatting.
+
+ChatGPT: I'll use plain text with simple headings and Me and ChatGPT labels so it's easy to copy into Notepad.
+
+Me: I want it based on what we actually talked about.
+
+ChatGPT: I can create an adapted reconstruction of our discussions, but it should be labeled as a reconstruction rather than an exact transcript.
